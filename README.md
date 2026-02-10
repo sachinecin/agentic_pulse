@@ -43,9 +43,10 @@ agentic-pulse/
 └── requirements.txt
 ```
 
-## License
+## System Flow Diagram
 
- graph TD
+```mermaid
+graph TD
     subgraph Input_Layer ["1. Input Layer"]
         A[High-Frequency Event] --> B[Encoder/Transformer Backbone]
     end
@@ -67,3 +68,8 @@ agentic-pulse/
     style C fill:#f96,stroke:#333,stroke-width:2px
     style G fill:#bbf,stroke:#333,stroke-width:2px
     style I fill:#f66,stroke:#333,stroke-width:2px
+```
+
+## License
+
+MIT
