@@ -2,7 +2,7 @@
 
 Agentic Pulse is a next-generation framework designed to bridge the gap between **Multi-Agent Intelligence** and **Single-Agent Latency**. 
 
-Unlike Agentic Distillation (e.g., AgentArk), which freezes multi-agent logic into static weights, **Agentic Pulse** uses **Virtual Neuron Masking** to allow a single model to "argue" with itself internally in a single forward pass.
+Unlike Agentic Distillation , which freezes multi-agent logic into static weights, **Agentic Pulse** uses **Virtual Neuron Masking** to allow a single model to "argue" with itself internally in a single forward pass.
 
 ## Key Innovations
 - **Virtual Neuron Masking (VNM):** On-the-fly partitioning of hidden states into Expert Personas.
