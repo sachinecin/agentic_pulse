@@ -45,4 +45,25 @@ agentic-pulse/
 
 ## License
 
-MIT
+ graph TD
+    subgraph Input_Layer ["1. Input Layer"]
+        A[High-Frequency Event] --> B[Encoder/Transformer Backbone]
+    end
+
+    subgraph Internal_Processing ["2. Agentic Pulse Core"]
+        B --> C{Virtual Neuron Masking}
+        C --> D[Persona: Opportunist]
+        C --> E[Persona: Risk Skeptic]
+        C --> F[Persona: Compliance]
+    end
+
+    subgraph Resolution_Layer ["3. Decision Layer"]
+        D & E & F --> G[Differentiable Consensus Layer]
+        G --> H{Dissonance Check}
+        H -- "High Dissonance" --> I[Active Pulse: Online Distillation]
+        H -- "Low Dissonance" --> J[Final Execution Signal]
+    end
+
+    style C fill:#f96,stroke:#333,stroke-width:2px
+    style G fill:#bbf,stroke:#333,stroke-width:2px
+    style I fill:#f66,stroke:#333,stroke-width:2px
