@@ -196,8 +196,10 @@ class LatencyBenchmark:
 
 
 def main():
-    """Run the benchmark suite.
-    Usage: python benchmarks/latency_benchmark.py"""
+    """
+    Run the benchmark suite.
+    Usage: python benchmarks/latency_benchmark.py
+    """
     benchmark = LatencyBenchmark(
         hidden_dim=768,
         num_personas=3,
