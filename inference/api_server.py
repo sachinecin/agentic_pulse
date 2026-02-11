@@ -202,6 +202,7 @@ async def health_check():
         uptime_seconds=round(time.time() - pulse_engine.start_time, 2)
     )
 
+
 @app.post("/infer", response_model=InferenceResponse, tags=["Inference"])
 async def infer_transaction(transaction: TransactionInput):
     """
@@ -307,8 +308,7 @@ async def shutdown_event():
 # ============================================================================
 
 def main():
-    """
-    Run the API server.
+    """Run the API server.
     
     Usage:
         python inference/api_server.py
